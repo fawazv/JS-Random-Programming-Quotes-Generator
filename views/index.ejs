@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quotes</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/Programming.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <main id="main">
+        <div class="main-content">
+            <h1 class="main-title">Quote of the Day</h1>
+            <p class="content"><img src="images/Left-Quotation-Symbol-Transparent.png" width="25px"><%= quote %><img src="images/Right-Quotation-Symbol-Transparent.png" width="25px"></p>
+            <p class="content-author"><%= author %></p>
+            <hr>
+        </div>
+        <form action="/newquote" method="get">
+            <button type="submit">New Quote</button>
+        </form>
+    </main>
+</body>
+</html>
